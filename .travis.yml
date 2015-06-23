@@ -1,0 +1,17 @@
+sudo: required
+
+language: python
+
+python:
+	- "3.4"
+
+before_install:
+	- sudo apt-get update
+
+install:
+	- pip install --upgrade pip
+	- pip install coverage
+	- pip install numpy
+
+before_script:
+	- uname -a
