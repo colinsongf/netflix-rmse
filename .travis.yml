@@ -25,4 +25,3 @@ script:
     - date
     - ls -al
     - make config
-    - make test
