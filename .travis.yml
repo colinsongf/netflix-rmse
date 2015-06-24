@@ -3,15 +3,27 @@ sudo: required
 language: python
 
 python:
-	- "3.4"
+    - "3.4"
 
 before_install:
-	- sudo apt-get update
+    - sudo apt-get update
 
 install:
-	- pip install --upgrade pip
-	- pip install coverage
-	- pip install numpy
+    - pip install --upgrade pip
+    - pip install coverage
+    - pip install numpy
 
 before_script:
+    - make versions
 	- uname -a
+	- pip3 --version
+	- pip3 freeze
+	- python3 --version
+	- coverage3 --version
+	- python3 -c "import numpy; print(numpy.__version__)"
+
+script:
+    - date
+    - ls -al
+    - make config
+    - make test
