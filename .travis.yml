@@ -15,12 +15,12 @@ install:
 
 before_script:
     - make versions
-	- uname -a
-	- pip3 --version
-	- pip3 freeze
-	- python3 --version
-	- coverage3 --version
-	- python3 -c "import numpy; print(numpy.__version__)"
+    - uname -a
+    - pip3 --version
+    - pip3 freeze
+    - python3 --version
+    - coverage3 --version
+    - python3 -c "import numpy; print(numpy.__version__)"
 
 script:
     - date
