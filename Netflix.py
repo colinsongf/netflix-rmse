@@ -2,6 +2,8 @@
 
 from math import sqrt
 from numpy import mean, sqrt, square, subtract
+import json
+from pprint import pprint
 
 def netflix_read(r):
     """
