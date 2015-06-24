@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 
+from math import sqrt
+from numpy import mean, sqrt, square, subtract
+
 def netflix_read(r):
     """
     Read a line from input file
