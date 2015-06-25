@@ -33,16 +33,16 @@ clean:
 config:
 	git config -l
 
-test: RunNetflix.out TestNetflix.out
-
 netflix-tests:
 	git clone https://github.com/cs373-summer-2015/netflix-tests.git
 
-Netflix.html: Collatz.py
+Netflix.html: Netflix.py
 	pydoc3 -w Netflix
 
 Netflix.log:
 	git log > Netflix.log
+
+test: TestNetflix.out RunNetflix.out
 
 RunNetflix.out: RunNetflix.py
 	cat RunNetflix.in
