@@ -81,7 +81,6 @@ def netflix_rate(viewer_data, movie, movie_info):
     Calculate estimated rating for a viewer
     Input movie_info: (movie_id, average rating, period)
     """
-
     viewer_rating_avg = viewer_data[movie]
     movie_rating_avg = movie_info[1]
     period = movie_info[2]
@@ -89,7 +88,8 @@ def netflix_rate(viewer_data, movie, movie_info):
     # Start with a rating that is the average of
     # all user ratings and the movie's average rating
     rating = (viewer_rating_avg + movie_rating_avg) / 2
-    
+   
+    # Create a multiplier to modify rating with 
     multiplier = 0
 
     movie_rating_avg = int(movie_rating_avg)
@@ -142,7 +142,7 @@ def netflix_solve(r, w):
         s = netflix_read(netflix_data[MOVIE], netflix_data[DECADE], line)
 
         if (s[0] != ""):
-            # If viewer
+            # If viewer, get rating prediction and actual rating and add to lists
             est_rating = netflix_rate(netflix_data[VIEWER], s[0], movie_info)
             actual_rating = netflix_data[SOLUTIONS][movie_info[0]][s[0]]
             
@@ -152,7 +152,7 @@ def netflix_solve(r, w):
             netflix_print(str(round(est_rating, 1)), w)
             
         else:
-            # If movie
+            # If movie, get movie information
             movie_info = s[1]
             netflix_print(str(movie_info[0]) + ":", w)
       
