@@ -3,6 +3,7 @@
 from Netflix import *
 from unittest import main, TestCase
 from io import StringIO
+import json
 import math
 
 class TestNetflix (TestCase):
@@ -12,48 +13,58 @@ class TestNetflix (TestCase):
     # ----
 
     def test_read1 (self):
-        r = StringIO("123:\n1\n2\n3")
+        movie_data = json.loads('{"123": 456}')
+        decade_data = json.loads('{"123": 2000}')
+        r = "123:\n1\n2\n3"
         
-        line = netflix_read(r)
-        self.assertEqual(line, "123:")
+        info = netflix_read(movie_data, decade_data, r)
+        movie_info = info[1]
+        assert(len(movie_info) == 3)
+        self.assertEqual(movie_info[0], "123")
+        self.assertEqual(movie_info[1], 456)
+        self.assertEqual(movie_info[2], 2000)
     
     def test_read2 (self):
-        r = StringIO("123456:\n789\n12345\n4242")
+        movie_data = json.loads('{"123456": 789}')
+        decade_data = json.loads('{"123456": 1900}')
+        r = "123456:\n789\n12345\n4242"
 
-        line = netflix_read(r)
-        self.assertEqual(line, "123456:")
-
-        line = netflix_read(r)
-        self.assertEqual(line, "789")
-
-        line = netflix_read(r)
-        self.assertEqual(line, "12345")
-
-        line = netflix_read(r)
-        self.assertEqual(line, "4242")
+        info = netflix_read(movie_data, decade_data, r)
+        movie_info = info[1]
+        assert(len(movie_info) == 3)
+        self.assertEqual(movie_info[0], "123456")
+        self.assertEqual(movie_info[1], 789)
+        self.assertEqual(movie_info[2], 1900)         
 
     def test_read3 (self):
-        r = StringIO("")
-        line = netflix_read(r)
-        self.assertEqual(line, "")
+        movie_data = json.loads('{"1": 2}')
+        decade_data = json.loads('{"1": 1920}')
+        r = "1:\n2\n3"
+
+        info = netflix_read(movie_data, decade_data, r)
+        movie_info = info[1]
+        assert(len(movie_info) == 3)
+        self.assertEqual(movie_info[0], "1")
+        self.assertEqual(movie_info[1], 2)
+        self.assertEqual(movie_info[2], 1920)
 
     # -----
     # write
     # -----
 
     def test_write1(self):
-        io = StringIO()
-        netflix_write(str(12345), w)
+        w = StringIO()
+        netflix_print(str(12345), w)
         self.assertEqual(w.getvalue(), "12345\n")
 
     def test_write2(self):
-        io = StringIO()
-        netflix_write("12345:\n" + str(6789))
+        w = StringIO()
+        netflix_print("12345:\n" + str(6789), w)
         self.assertEqual(w.getvalue(), "12345:\n6789\n")
 
     def test_write3(self):
-        io = StringIO()
-        netflix_write("", w)
+        w = StringIO()
+        netflix_print("", w)
         self.assertEqual(w.getvalue(), "\n")
 
 

@@ -39,6 +39,7 @@ def get_netflix_data(datatype):
     
     f = open(cache, "r")
     data = json.loads(f.read())
+    f.close()
     return data
 
 # ------------
