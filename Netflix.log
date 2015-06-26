@@ -1,0 +1,137 @@
+commit d794b5ba2169d63c9bf61325fc530fd752a532d5
+Author: = <starmansix@gmail.com>
+Date:   Thu Jun 25 23:02:54 2015 -0500
+
+    Adding RunNetflix.out with output
+
+commit 1a80581acdda211649d254958fad10858594c2fb
+Author: = <starmansix@gmail.com>
+Date:   Thu Jun 25 22:59:30 2015 -0500
+
+    Fixed unit tests, all passing
+
+commit 5b934e634963691ed1a0b9ee1ac8278648a3f513
+Author: = <starmansix@gmail.com>
+Date:   Thu Jun 25 22:08:30 2015 -0500
+
+    Finished unit tests Fixes #7 Fixes #19
+
+commit a4329b6fa178dbad82ec8a1f63296fdd55b02fc5
+Author: = <starmansix@gmail.com>
+Date:   Thu Jun 25 17:30:07 2015 -0500
+
+    Cleanup
+
+commit 988dc82af19107dd81d03ed787bdb809417548c3
+Author: = <starmansix@gmail.com>
+Date:   Thu Jun 25 05:40:57 2015 -0500
+
+    Implemented prediction algorithm
+
+commit 5bab78e143d64e299f351860d2f00c71528a2ecb
+Author: = <starmansix@gmail.com>
+Date:   Thu Jun 25 01:30:40 2015 -0500
+
+    All data needed for algorithm ready
+
+commit a067a96ff7344f17bdd809ba0d99eeada4bc340a
+Author: = <starmansix@gmail.com>
+Date:   Wed Jun 24 22:41:08 2015 -0500
+
+    Added cache paths and methods to get avg ratings
+
+commit 2beeb428c499d77b3040660e46854221ec80fa1b
+Author: = <starmansix@gmail.com>
+Date:   Wed Jun 24 18:07:30 2015 -0500
+
+    rmse method, tests for rmse and write
+
+commit 522fe6427f3703cc3bbaed09275c373ff8d5cfad
+Author: = <starmansix@gmail.com>
+Date:   Wed Jun 24 17:14:14 2015 -0500
+
+    Added numpy imports
+
+commit 84a19af6672736b98e07293e6e2d68bc106b15fe
+Author: = <starmansix@gmail.com>
+Date:   Wed Jun 24 17:12:58 2015 -0500
+
+    Added rmse method
+
+commit 49cf13cda1c97314012ec839f55c1ad186e0d774
+Author: = <starmansix@gmail.com>
+Date:   Wed Jun 24 16:01:12 2015 -0500
+
+    Added tests for netflix_read
+
+commit caf4be93768bf2201f0a7089d263feb3ce24c0bb
+Author: = <starmansix@gmail.com>
+Date:   Wed Jun 24 15:44:28 2015 -0500
+
+    Fleshing out netflix methods
+
+commit 3802157fc0e8d9c1a2bbdd279ee3b2e2748576c2
+Author: = <starmansix@gmail.com>
+Date:   Wed Jun 24 15:25:29 2015 -0500
+
+    Adding skeleton for netflix methods
+
+commit 0e1e7a9a4e9e2ecca664bd3e4742378e966ec7be
+Author: = <starmansix@gmail.com>
+Date:   Tue Jun 23 23:53:51 2015 -0500
+
+    Removed make test from yml
+
+commit 24e4ab530ee9a91c8e2b1d56aace610b0c61481a
+Author: = <starmansix@gmail.com>
+Date:   Tue Jun 23 23:49:46 2015 -0500
+
+    Adding RunNetflix.in
+
+commit 681e248c4582b81ed99f1887b391cdb424b66a4b
+Author: = <starmansix@gmail.com>
+Date:   Tue Jun 23 23:34:39 2015 -0500
+
+    Adding files
+
+commit d16115b312c1bd4ced6e91d8f87f20168fce1e5b
+Author: = <starmansix@gmail.com>
+Date:   Tue Jun 23 23:14:10 2015 -0500
+
+    Adding makefile
+
+commit 84db53685ac60630ae960f9ac35a7a88956e58e4
+Author: = <starmansix@gmail.com>
+Date:   Tue Jun 23 19:33:34 2015 -0500
+
+    More yml fixes
+
+commit 8d63a1589ef28bf8cb11ac04264e2eec4ef7d1ae
+Author: = <starmansix@gmail.com>
+Date:   Tue Jun 23 19:25:34 2015 -0500
+
+    Fixed tabs in yml file
+
+commit e95443fd18d32241cd0802d05827c2980aab220a
+Author: = <starmansix@gmail.com>
+Date:   Tue Jun 23 19:16:54 2015 -0500
+
+    Finished .travis.yml
+
+commit 499df849b34fd0349da6b5b0f9e0cfa81a1acfc2
+Author: = <starmansix@gmail.com>
+Date:   Tue Jun 23 14:04:09 2015 -0500
+
+    Adding .travis.yml file
+
+commit 1c16e782a04ec8313696a0c92e9caeb5a4a5787a
+Author: = <starmansix@gmail.com>
+Date:   Tue Jun 23 13:47:37 2015 -0500
+
+    Initial commit
+
+commit ecd12feeff23a5cd6413e8ae2f6c58675ba9bfa2
+Author: taapesh <starmansix@gmail.com>
+Date:   Tue Jun 23 13:20:41 2015 -0500
+
+    Initial commit

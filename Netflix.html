@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module Netflix</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>Netflix</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/v/filer4b/v38q001/am611/cs373/cs373-netflix/Netflix.py">/v/filer4b/v38q001/am611/cs373/cs373-netflix/Netflix.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="json.html">json</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-get_netflix_data"><strong>get_netflix_data</strong></a>(datatype)</dt><dd><tt>Get&nbsp;json&nbsp;data&nbsp;depending&nbsp;on&nbsp;datatype<br>
+VIEWER,&nbsp;MOVIE,&nbsp;DECADE,&nbsp;SOLUTIONS</tt></dd></dl>
+ <dl><dt><a name="-netflix_print"><strong>netflix_print</strong></a>(s, w)</dt><dd><tt>Write&nbsp;a&nbsp;line&nbsp;to&nbsp;output</tt></dd></dl>
+ <dl><dt><a name="-netflix_rate"><strong>netflix_rate</strong></a>(viewer_data, user_id, movie_info)</dt><dd><tt>Calculate&nbsp;estimated&nbsp;rating&nbsp;for&nbsp;a&nbsp;viewer<br>
+Input&nbsp;movie_info:&nbsp;(movie_id,&nbsp;average&nbsp;rating,&nbsp;period)</tt></dd></dl>
+ <dl><dt><a name="-netflix_read"><strong>netflix_read</strong></a>(movie_data, decade_data, r)</dt><dd><tt>Read&nbsp;a&nbsp;line&nbsp;from&nbsp;input<br>
+Extract&nbsp;movie&nbsp;details&nbsp;as&nbsp;a&nbsp;tuple:&nbsp;(movie,&nbsp;avg&nbsp;rating,&nbsp;period)</tt></dd></dl>
+ <dl><dt><a name="-netflix_solve"><strong>netflix_solve</strong></a>(r, w)</dt></dl>
+ <dl><dt><a name="-rmse"><strong>rmse</strong></a>(a, p)</dt><dd><tt>O(1)&nbsp;in&nbsp;space<br>
+O(n)&nbsp;in&nbsp;time</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>DECADE</strong> = 2<br>
+<strong>MOVIE</strong> = 1<br>
+<strong>SOLUTIONS</strong> = 3<br>
+<strong>VIEWER</strong> = 0<br>
+<strong>cache_customer_decade</strong> = '/u/ebanner/netflix-tests/drc2582-customer_decade_dict.json'<br>
+<strong>cache_movie_avg</strong> = '/u/ebanner/netflix-tests/BRG564-Average_Movie_Rating_Cache.json'<br>
+<strong>cache_movie_decades</strong> = '/u/ebanner/netflix-tests/pra359-Movie_Decades_Cache.json'<br>
+<strong>cache_viewer_avg</strong> = '/u/ebanner/netflix-tests/ezo55-Average_Viewer_Rating_Cache.json'<br>
+<strong>movie</strong> = ''<br>
+<strong>probe_solutions</strong> = '/u/ebanner/netflix-tests/pam2599-probe_solutions.json'<br>
+<strong>sqrt</strong> = &lt;ufunc 'sqrt'&gt;<br>
+<strong>square</strong> = &lt;ufunc 'square'&gt;<br>
+<strong>subtract</strong> = &lt;ufunc 'subtract'&gt;</td></tr></table>
+</body></html>
