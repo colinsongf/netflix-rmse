@@ -76,12 +76,12 @@ def netflix_print(s, w):
 # netflix_rate
 # ------------
 
-def netflix_rate(viewer_data, movie, movie_info):
+def netflix_rate(viewer_data, user_id, movie_info):
     """
     Calculate estimated rating for a viewer
     Input movie_info: (movie_id, average rating, period)
     """
-    viewer_rating_avg = viewer_data[movie]
+    viewer_rating_avg = viewer_data[user_id]
     movie_rating_avg = movie_info[1]
     period = movie_info[2]
 
@@ -123,7 +123,7 @@ def netflix_rate(viewer_data, movie, movie_info):
         multiplier += 1.0
     else:
         multiplier += 0.98
-   
+  
     return (rating * multiplier)
 
 # -------------
